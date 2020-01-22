@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HelpWindow</class>
+ <widget class="QDialog" name="HelpWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>337</width>
+    <height>302</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>301</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Blackjack Card Values:
+You need to know the card values to know how
+to play 21. Cards 2-10 are worth the value of
+the number on the face of the card. Numbered
+cards are worth the corresponding number
+indicated on the card. Face cards (those with
+pictures on them) are worth 10, except for
+the Ace, which is worth 1 or 11. A picture
+combined with an Ace is Blackjack (a value of 21).
+
+21 Card Game Explained:
+The most important blackjack rule is simple:
+beat the dealer’s hand without going over 21.
+If you get 21 points exactly on the deal,
+that is called a “blackjack.”
+</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
