@@ -23,16 +23,31 @@ public:
         BLACKJACK_DEALER_TURN   // 1
     };
 
-    // rozgrywka
-    void displayCard(Deck &deck, int index, BlackjackTurn turn, MainWindow *mainWin);
+private:
+    Deck *m_deck;
+    int m_userScore{ 0 };
+    int m_dealerScore{ 0 };
+    int m_cardCounter{ 0 };
 
-    BlackjackResult playBlackJack(Deck &deck, MainWindow *mainWin);
+public:
+    GamePlay();
+
+    // rozgrywka
+    void displayCard(int index, BlackjackTurn turn, MainWindow *mainWin);
+
+    void startBlackJack(MainWindow *mainWin);
+    void playerHit(MainWindow *mainWin);
+    void playerStand(MainWindow *mainWin);
+    void isExceed(MainWindow *mainWin);
 
     // efekt zakonczenia rozgrywki
     void gameResult(BlackjackResult result, MainWindow *mainWin);
+    void gameClear(MainWindow *mainWin);
 
     // funkcja glowna gry
     void main(MainWindow *mainWin);
+
+    friend class MainWindow;
 };
 
 #endif // GAMEPLAY_H

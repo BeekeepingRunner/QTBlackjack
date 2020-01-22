@@ -7,7 +7,6 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    gamePlay = new GamePlay;
     ui->hitButton->setVisible(0);
     ui->standButton->setVisible(0);
     ui->resultLabel->setVisible(0);
@@ -32,17 +31,16 @@ void MainWindow::on_helpButton_clicked()
 // rozpoczyna gre
 void MainWindow::on_startButton_clicked()
 {
-    ui->againButton->setVisible(0);
-    ui->startButton->setVisible(0);
-    ui->hitButton->setVisible(1);
-    ui->standButton->setVisible(1);
+    gamePlay = new GamePlay;
+    gamePlay->startBlackJack(this);
+}
 
-    GamePlay *gamePlay = new GamePlay;
-    gamePlay->main(this);
+void MainWindow::on_hitButton_clicked()
+{
+    gamePlay->playerHit(this);
+}
 
-    ui->startButton->setVisible(1);
-    ui->againButton->setVisible(1);
-    ui->hitButton->setVisible(0);
-    ui->standButton->setVisible(0);
-    ui->turnLabel->setVisible(0);
+void MainWindow::on_standButton_clicked()
+{
+    gamePlay->playerStand(this);
 }

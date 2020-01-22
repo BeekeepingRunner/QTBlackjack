@@ -27,6 +27,10 @@ private slots:
 
     void on_startButton_clicked();
 
+    void on_hitButton_clicked();
+
+    void on_standButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     GamePlay *gamePlay;

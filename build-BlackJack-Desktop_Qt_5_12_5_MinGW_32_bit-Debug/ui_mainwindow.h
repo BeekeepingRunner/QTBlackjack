@@ -100,7 +100,7 @@ public:
         userCardSlot = new QLabel(horizontalLayoutWidget);
         userCardSlot->setObjectName(QString::fromUtf8("userCardSlot"));
         userCardSlot->setMaximumSize(QSize(150, 230));
-        userCardSlot->setPixmap(QPixmap(QString::fromUtf8(":/cardImgs/blank.png")));
+        userCardSlot->setPixmap(QPixmap(QString::fromUtf8(":/cardImgs/green_back.png")));
         userCardSlot->setScaledContents(true);
         userCardSlot->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         userCardSlot->setWordWrap(false);
@@ -149,7 +149,7 @@ public:
         dealerCardSlot = new QLabel(horizontalLayoutWidget);
         dealerCardSlot->setObjectName(QString::fromUtf8("dealerCardSlot"));
         dealerCardSlot->setMaximumSize(QSize(150, 230));
-        dealerCardSlot->setPixmap(QPixmap(QString::fromUtf8(":/cardImgs/blank.png")));
+        dealerCardSlot->setPixmap(QPixmap(QString::fromUtf8(":/cardImgs/green_back.png")));
         dealerCardSlot->setScaledContents(true);
         dealerCardSlot->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         dealerCardSlot->setWordWrap(false);

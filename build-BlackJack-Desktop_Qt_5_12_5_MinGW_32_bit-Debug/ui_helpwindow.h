@@ -25,10 +25,10 @@ public:
     {
         if (HelpWindow->objectName().isEmpty())
             HelpWindow->setObjectName(QString::fromUtf8("HelpWindow"));
-        HelpWindow->resize(337, 302);
+        HelpWindow->resize(361, 310);
         label = new QLabel(HelpWindow);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(10, 20, 301, 261));
+        label->setGeometry(QRect(10, 10, 331, 301));
         QFont font;
         font.setPointSize(11);
         label->setFont(font);
